@@ -40,7 +40,7 @@ We propose **MBBDM**, a dual-guided Brownian-Bridge diffusion model that conditi
 
 Todo
 
-Data & Ethics
+**Data & Ethics**
 Datasets. Kvasir-SEG (1,000 polyp images + masks), ISIC 2016 (~900 dermoscopy). Splits: Kvasir 7:1:2 (train/val/synth), ISIC 7:1:1. Synthetic set pairs real masks with generated images and keeps real GT images for comparison. 
 
 Structured text. Context-aware, controlled-vocab descriptions (location, count, size, color, morphology) generated programmatically via a multimodal LLM with strict composition rules and manual verification. 
@@ -48,7 +48,7 @@ Structured text. Context-aware, controlled-vocab descriptions (location, count, 
 
 
 
-Method (Brief)
+## Method (Brief)
 Backbone. UNet denoiser; standard ResBlocks per scale; ACBN replaces all BN layers to inject text at every stage. 
 
 ACBN. Projects features to text space, fuses with token embeddings via MHA, pools to produce per-channel κ/ρ to modulate BN output; handles long token sequences and stabilizes training. 
@@ -57,7 +57,7 @@ ACBN. Projects features to text space, fuses with token embeddings via MHA, pool
 Objective. Brownian-Bridge diffusion loss with mask as endpoint, plus DDIM-style fast sampling. 
 
 
-Pretrained Weights
+## Pretrained Weights
 
 Todo
 
