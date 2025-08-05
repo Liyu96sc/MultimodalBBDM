@@ -5,10 +5,8 @@ Code for ”Multimodal Brownian Bridge Diffusion Model for Controllable Syntheti
 
 ## TODO 
 - [ ] Release training & inference code (MBBDM UNet + ACBN modules)
-- [ ] Upload pretrained checkpoints for Kvasir-SEG / ISIC 2016
-- [ ] Publish structured text annotations and prompt template
-- [ ] Add `scripts/reproduce.sh` with exact commands + seeds
-- [ ] Provide Dockerfile and environment lockfile
+- [ ] Upload pretrained checkpoints 
+- [ ] Publish structured text data
 - [ ] Release example masks & sample outputs for quick demo
 - [ ] Add qualitative figures and result tables to `assets/`
 
